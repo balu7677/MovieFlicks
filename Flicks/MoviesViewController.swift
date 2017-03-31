@@ -13,21 +13,26 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     var movieDict:[NSDictionary]?
-    
+    var endPoint: String!
     @IBOutlet weak var movieTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.dataSource = self
         tableView.delegate = self
         //let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = URL(string:"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
+        var url = URL(string:"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
+        if(endPoint == "top_rated"){
+                url = URL(string:"https://api.themoviedb.org/3/movie/top_rated?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
+        }
         let request = URLRequest(url: url!)
         let session = URLSession(
             configuration: URLSessionConfiguration.default,
             delegate:nil,
             delegateQueue:OperationQueue.main
         )
+        
         
         let task : URLSessionDataTask = session.dataTask(
             with: request as URLRequest,
@@ -71,14 +76,27 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let movie = movieDict![indexPath.row]
        // print(movie["title"] as! String)
         let baseURL = "https://image.tmdb.org/t/p/w342"
-        let posterPath = movie["poster_path"] as! String
-        let ImageUrl = URL(string: baseURL + posterPath)
+        if let posterPath = movie["poster_path"] as? String {
+            let ImageUrl = URL(string: baseURL + posterPath)
+            cell.moviePosterView.setImageWith(ImageUrl!)
+        }
         cell.movieTitle.text = movie["title"] as! String
         cell.overview.text = movie["overview"] as! String
-        cell.moviePosterView.setImageWith(ImageUrl!)
+        
         
         //cell.textLabel?.text = movie["title"] as! String
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender! as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)
+        let movie = movieDict![(indexPath?.row)!]
+        
+        let detailsViewController = segue.destination as! DetailsViewController
+        detailsViewController.movie = movie
+        
+        
     }
 
 

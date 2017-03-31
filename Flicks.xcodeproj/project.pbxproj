@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		372FDCC01E8CFD66005C68E1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FDCBF1E8CFD66005C68E1 /* CustomCell.swift */; };
+		3740B38B1E8E30B5000F4B05 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740B38A1E8E30B5000F4B05 /* DetailsViewController.swift */; };
 		375AC1E51E8CDFC800DBFF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AC1E41E8CDFC800DBFF95 /* AppDelegate.swift */; };
 		375AC1E71E8CDFC800DBFF95 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AC1E61E8CDFC800DBFF95 /* MoviesViewController.swift */; };
 		375AC1EA1E8CDFC800DBFF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375AC1E81E8CDFC800DBFF95 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		372FDCBF1E8CFD66005C68E1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3740B38A1E8E30B5000F4B05 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		375AC1E11E8CDFC800DBFF95 /* Flicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375AC1E41E8CDFC800DBFF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		375AC1E61E8CDFC800DBFF95 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				375AC1ED1E8CDFC800DBFF95 /* LaunchScreen.storyboard */,
 				375AC1F01E8CDFC800DBFF95 /* Info.plist */,
 				372FDCBF1E8CFD66005C68E1 /* CustomCell.swift */,
+				3740B38A1E8E30B5000F4B05 /* DetailsViewController.swift */,
 			);
 			path = Flicks;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				375AC1E71E8CDFC800DBFF95 /* MoviesViewController.swift in Sources */,
 				372FDCC01E8CFD66005C68E1 /* CustomCell.swift in Sources */,
 				375AC1E51E8CDFC800DBFF95 /* AppDelegate.swift in Sources */,
+				3740B38B1E8E30B5000F4B05 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

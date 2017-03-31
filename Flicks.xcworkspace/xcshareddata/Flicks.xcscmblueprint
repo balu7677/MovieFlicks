@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D46FB868883AE7E3C68E95F0014461C3B7104D0D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D46FB868883AE7E3C68E95F0014461C3B7104D0D" : 9223372036854775807,
+    "5021740E536BECE0E5640CAE27C6EADD55EA4E7D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "357DAC60-451E-4EC9-9BED-2EEFEA610EDB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D46FB868883AE7E3C68E95F0014461C3B7104D0D" : "Flicks\/",
+    "5021740E536BECE0E5640CAE27C6EADD55EA4E7D" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Flicks",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Flicks.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/balu7677\/IOS-Tipper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5021740E536BECE0E5640CAE27C6EADD55EA4E7D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/balu7677\/MovieFlicks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D46FB868883AE7E3C68E95F0014461C3B7104D0D"
+    }
+  ]
+}
