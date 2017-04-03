@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
+        UINavigationBar.appearance().barTintColor = UIColor(red:242/255.0, green:179/255.0, blue:68/255.0,alpha: 1)
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -35,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]
-        
+        UITabBar.appearance().barTintColor = UIColor(red:242/255.0, green:179/255.0, blue:68/255.0,alpha: 1)
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
 
