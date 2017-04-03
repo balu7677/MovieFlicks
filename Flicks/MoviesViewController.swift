@@ -62,6 +62,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                         self.filteredData = responseDictionary["results"] as! [NSDictionary]
                         //print(movieDict)
                         self.tableView.reloadData()
+                        self.errorView.isHidden = true
                         
                         // This is where you will store the returned array of posts in your posts property
                         // self.feeds = responseFieldDictionary["posts"] as! [NSDictionary]
@@ -159,6 +160,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                         self.movieDict = responseDictionary["results"] as! [NSDictionary]
                         //print(movieDict)
                         self.tableView.reloadData()
+                        self.errorView.isHidden = true
                         
                         // This is where you will store the returned array of posts in your posts property
                         // self.feeds = responseFieldDictionary["posts"] as! [NSDictionary]
